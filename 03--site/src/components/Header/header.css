@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.header h1 {
+    background-color: rgb(226, 119, 56);
+}
+
+h1 {
+    color: rgb(238, 198, 66);
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    border-radius: 120px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 1%;
+}
+h1:hover {
+    transition: 3s;
+    color:aliceblue;
+    cursor: pointer;
+}
