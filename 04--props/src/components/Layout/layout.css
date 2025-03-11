@@ -1,0 +1,14 @@
+.layout{
+    padding: 5px;
+}
+.layout h1{
+    text-align: center;
+  
+}
+
+.layout p {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-align: center;
+}
