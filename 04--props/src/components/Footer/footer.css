@@ -1,8 +1,29 @@
-.footer h3 , p{
-    color: #FFA500;
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    text-align:left;
+    margin-top: 12vw;
 }
+
+.footer h3 , p{
+    color: #121110;
+    font-size: 1.2em;
+}
+
+
 
 .footer a{
     text-decoration: none;
-    color: #FFA500;
+    color: #121110;
+    border: 1px solid red;
+    border-radius: 25px;
+    padding: 3.2px 15px;
+    transition: 2s ease;
+}
+
+.footer a:hover {
+    background-color: red;
+    color: white;
 }

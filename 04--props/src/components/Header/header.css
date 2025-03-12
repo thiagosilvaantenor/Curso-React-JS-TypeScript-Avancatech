@@ -1,11 +1,12 @@
 .header {
-    background-color: #1e3a8a;
+    /*background-color: #1e3a8a;*/
+
     color: white;
     padding: 15px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 40px 6px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 40px 6px rgba(0, 0, 0, 0.1);*/
 }
 
 .header nav ul {
@@ -20,18 +21,18 @@
     justify-content: center;
 }
 .header nav ul li a {
-    color:#fefefe;
+    color:#140202;
     text-decoration: none;
     font-size: 1rem;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease;
     border: 1px solid black;
     border-radius: 12px;
     padding: 10px 20px;
-    background-color: rgb(60, 70, 213);
+    background-color: rgb(234, 46, 25);
     font-weight: 300;
 }
 .header nav ul li a:hover {
-    color: aquamarine;
+    color: #fefefe;
     font-size: 1.12rem;
 }
 
