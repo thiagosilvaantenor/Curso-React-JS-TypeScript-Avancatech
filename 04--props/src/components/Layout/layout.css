@@ -1,15 +1,14 @@
 
 .layout{
-    padding: 9rem;
+    padding: 9.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 25px;
     
 }
 .layout h1{
     text-align: center;
-    margin-top: 5.8rem;
+    margin-top: 2rem;
     margin-right: 12rem;
     text-align: center;
 }
