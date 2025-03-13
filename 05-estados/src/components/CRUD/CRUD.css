@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    background-color: palegoldenrod;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 2rem;
+}
+
+.to-do-list {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 2em;
+    box-shadow: 35px 35px 32px rgba(240, 45, 45, 0.1); /* Sombra suave ao redor da borda */
+    width: 100%; /* Largura do container */
+    max-width: 800px; /* Tamanho máximo do container */
+}
+
+.to-do-list h1 {
+    margin-top: 2em;
+    font-size: 3em;
+}
+
+.to-do-list input {
+    margin-top: 1.5rem;
+    margin-right: 0.5rem;
+    padding: 1rem 1.2rem;
+    border-radius: 35px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+}
+.to-do-list input:focus {
+    background-color: #e3a062;
+    color: #761e03;
+}
+
+.to-do-list button{
+    margin-left: 0.55rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 25px;
+    background-color: #88ed30;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    color: #191414;
+}
+
+.to-do-list button:hover {
+    cursor: pointer;
+    transition: 2s ease-in-out;
+    background-color: #09c334;
+}
+
+#btn-remover:hover{
+    background-color: red;
+}

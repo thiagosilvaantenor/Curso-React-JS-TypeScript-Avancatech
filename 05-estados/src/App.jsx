@@ -1,12 +1,9 @@
-import Texto from "./components/Texto";
+import TodoApp from "./components/CRUD";
 
 const App = () => {
   return (
     <div>
-      <Texto cor={"purple"} />
-      <Texto cor={"blue"} />
-      <Texto cor={"gold"} />
-      <Texto cor={"red"} />
+      <TodoApp />
 
     </div>
   )
