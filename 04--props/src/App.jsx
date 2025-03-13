@@ -17,9 +17,9 @@ const App = () => {
             <Titulo
                 nome="Tempestade"
                 paragrafo={true}
-                cor={"rgba(0, 0, 128, 1)"}
-                bg={"rgba(255, 255, 255, 1)"}
-                border={"5px dotted black"}
+                cor={"black"}
+                bg={"#FEFEFE"}
+                border={" 12px solid #FFD700"}
                 radius={"100px"}
                 pad={"40px"}
             />
@@ -28,7 +28,7 @@ const App = () => {
                 paragrafo={true}
                 cor={"rgb(0, 0, 1)"}
                 bg={"rgba(255, 215, 0, 1)"}
-                border={"1px solid purple"}
+                border={"5px solid #6A0DAD"}
                 radius={"90px"}
                 pad={"40px"}
             />
