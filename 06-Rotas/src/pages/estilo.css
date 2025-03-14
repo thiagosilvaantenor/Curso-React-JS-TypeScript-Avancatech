@@ -1,0 +1,45 @@
+.menu {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0px 26px rgba(6, 34, 146, 0.791);
+    border-radius: 40px;
+    margin-top: 0.3rem;
+}
+
+.menu a {
+    align-items: center;
+    justify-content: center;
+    color:#140202;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 10px 20px;
+    background-color: rgb(234, 46, 25);
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: #fefefe;
+    font-size: 1.12rem;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 2.3em;
+    text-align: center;
+    margin-top: 30px;
+}
+
+p{
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 25px
+}
+
