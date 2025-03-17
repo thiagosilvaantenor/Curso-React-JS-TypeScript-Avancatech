@@ -1,5 +1,5 @@
 import Menu from "./Menu";
-
+import './estilo.css'
 export default function Sobre() {
     return(
         <div>

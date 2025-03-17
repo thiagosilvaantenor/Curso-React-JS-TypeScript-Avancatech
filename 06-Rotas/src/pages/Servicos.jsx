@@ -1,3 +1,4 @@
+import './estilo.css'
 import Menu from "./Menu";
 
 export default function Servicos() {
@@ -5,8 +6,12 @@ export default function Servicos() {
         <div>
             <Menu />
             <h1>Conheça nossos serviços: </h1>
-            <p>Design 🎨</p>
-            <p></p>
+            <ul className='servicos-lista'>
+                <li>Design 🎨</li>
+                <li>Construção de sites 👩‍💻👨‍💻</li>
+                <li>Construção de aplicativos 📱</li>
+            </ul>
+            
         </div>
     )
 }

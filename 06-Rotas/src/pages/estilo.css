@@ -38,8 +38,26 @@ h1{
 }
 
 p{
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-align: center;
-    margin-top: 25px
+    margin-top: 25px;
+    font-weight: 400;
 }
 
+.servicos-lista {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-self: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.servicos-lista li {
+    margin-top: 2.5rem;
+    font-size: 2.5em;
+    font-weight: 500;
+    border: 5px dotted beige;
+    border-radius: 20px;
+    padding: 15px;
+}

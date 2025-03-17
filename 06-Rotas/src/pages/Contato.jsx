@@ -6,8 +6,11 @@ function Contato() {
 
             <Menu />
             <h1>Página de Contato </h1>
-            <p>Aqui vai o texto desta página! </p>
-            
+            <p>Nossa central de atendimento: 11 4002-8922 </p>
+            <p>Nossas redes sociais:</p>
+            <p>Linkedin: </p>
+            <p>Instagram: </p>
+            <p>TikTok: </p>
 
         </div>
     )
