@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+    background-image: url("https://images5.alphacoders.com/120/1205843.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(12, 12, 12, 0.2);
+    box-shadow:  10px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;    
+}
+
+
+
+h2 {
+    margin-bottom: 20px;
+    color: #180c0c;
+    font-weight: 800;
+}
+
+input {
+    width: 90%;
+    padding: 10px 5px;
+    margin: 10px 0;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 800;
+    color:#030c72a8;
+    
+}
+
+button {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.address {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e3f2fd;
+    border-radius: 5px;
+    text-align: left;
+}
