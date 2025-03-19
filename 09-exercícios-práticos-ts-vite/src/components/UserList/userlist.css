@@ -1,0 +1,46 @@
+.user-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.user-list ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.user-list li {
+    text-decoration: none;
+    background: #f8d7da;
+    padding: 8px;
+    font-weight: 500;
+    width: 50%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: center;
+    margin-left: 12vw;
+}
+
+
+.user-list li button {
+    padding: 5px;
+    background-color: #f8d7da;
+    border-radius: 5px;
+    cursor: pointer;
+    color: red;
+}
+
+.user-list li button:hover {
+    transition: background color 0.3s ease;
+    background-color: red;
+    color:#fefefe
+}
