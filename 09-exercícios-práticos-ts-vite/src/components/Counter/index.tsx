@@ -3,7 +3,7 @@ import './counter.css'
 
 const Counter = () => {
     const [contador, setContador] = useState(0);
-
+    //TODO: usar useState pra lidar com erro em vez de usar innerHTML
     const incrementar = () => {
         let valorInicial = contador;
         setContador(++valorInicial);
@@ -13,9 +13,11 @@ const Counter = () => {
         let valorInicial = contador;
         if (valorInicial == 0){
             let conter : HTMLElement | null = document.getElementById('conter');
-            conter!.innerHTML += `<p>Contador não pode ficar abaixo de 0 </p>` 
+            conter!.innerHTML += `<p>Contador não pode ficar abaixo de 0 </p>`;
+        } else {
+            setContador(--valorInicial);
         }
-        setContador(--valorInicial);
+
     }
 
 
