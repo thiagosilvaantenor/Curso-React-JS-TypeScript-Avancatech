@@ -1,10 +1,11 @@
 import { useState } from "react"
 
+//Cria o hook para retornar um estado booleano 
+export default function useToogle(inicial:boolean = false):[boolean, () => void] {
+    const [estado, setEstado] = useState<boolean>(inicial);
 
-export default function useToogle() {
-    const estado = false;
+    //Alterna o estado do hook
+    const toggle = () => setEstado(prevEstado => !prevEstado);
     
-    return(
-        {estado}
-    )
+    return [ estado, toggle];
 }

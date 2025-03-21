@@ -1,19 +1,18 @@
-import { useState } from 'react';
 import useToogle from '../hooks/useToogle'
 import './toggleComponent.css'
 
 const ToggleComponent = () => {
 
-    const estado = useToogle();
-
-    const trocaEstado = () =>{
-        return !estado;
-    }
-
-
+    const [estado, toggle] = useToogle(false);
+    
     return (
-        <button id='btn-hook' onClick={
-            () => trocaEstado()}> Clique para mudar o cor do Botão</button>
+        <div className='container-toggle'>
+            <p>{estado ? 'Estado é TRUE' : 'Estado é FALSE'}</p>
+            <button 
+            onClick={toggle}
+            className={estado ? 'ligado' : 'desligado'}
+            >Clique para mudar o Estado</button>
+        </div>
     )
 }
 export default ToggleComponent

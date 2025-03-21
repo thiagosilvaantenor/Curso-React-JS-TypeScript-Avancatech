@@ -1,5 +1,5 @@
 # Exercícios de React com TypeScript e Vite
-
+## Enunciados
 1. *Criando um Componente Simples (Prático)*  
    - Crie um componente Button.tsx que receba uma **prop label** e exiba um botão com esse texto.  
    - *Desafio extra:* Adicione uma prop opcional onClick e faça o botão disparar um evento ao ser clicado.  
@@ -20,3 +20,6 @@
    - Qual a vantagem de usar TypeScript em um projeto React?  
    - O que é o Vite e como ele se compara ao Create React App?  
    - Como o TypeScript lida com pro
+
+## Preview
+![print dos exercícios](image.png)

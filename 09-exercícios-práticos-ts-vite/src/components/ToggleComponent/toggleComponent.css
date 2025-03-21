@@ -1,7 +1,34 @@
+.container-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.container-toggle button {
+    width: 30%;
+    border-radius: 15px;
+    border: none;
+    align-self: center;
+    padding: 10px 5px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.container-toggle button:hover {
+    font-size: 1em;
+    color: #fefefe;
+}
+
+.container-toggle p {
+    font-weight: 700;
+}
+
 .ligado {
-    background-color: rgb(55, 206, 55);
+    background-color: #21e421;
 }
 
 .desligado {
-    background-color: red;
+    background-color: #f50a0a;
 }

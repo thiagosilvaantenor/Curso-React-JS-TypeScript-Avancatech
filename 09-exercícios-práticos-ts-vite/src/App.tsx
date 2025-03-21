@@ -14,26 +14,31 @@ export default function App() {
         onClick={() => alert('Botão foi clicado!')}
       />
 
-      <h2>Exercício 2: Contador</h2>
+      <h2>Exercício 2: Contador 🕰️</h2>
       <Counter />
       
-      <h2>Lista de Usuários</h2>
+      <h2>Lista de Usuários 👨‍💻👩‍💻</h2>
       <UserList
       usuarios={[
         {
         id: 1,
         nome: 'Geralt',
-        idade: 24 
+        email: 'geralt@email.com'
         },
         {
           id: 2,
           nome: 'Yenneffer',
-          idade: 26
+          email: 'yenna@email.com'
+        },
+        {
+          id: 3,
+          nome: 'Cirilla',
+          email: 'ciri@email.com'
         }
     ]}
       />
-      <h2>Hook Personalizado</h2>
-        <ToggleComponent />
+      <h2>Hook Personalizado 🪝</h2>
+        <ToggleComponent />  
     </div>
   )
 }

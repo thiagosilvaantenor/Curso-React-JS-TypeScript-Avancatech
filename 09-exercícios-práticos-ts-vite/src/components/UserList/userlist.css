@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 50px;
+    gap: 5rem;
+    align-items: center;
 }
 
 .user-list ul {
@@ -11,25 +12,29 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    width: 80%;
 }
 
 .user-list li {
     text-decoration: none;
     background: #f8d7da;
     padding: 8px;
-    font-weight: 500;
-    width: 50%;
+    font-weight: 650;
+    width: 100%;
     text-align: center;
     border: 1px solid black;
-    border-radius: 40px;
+    border-radius: 12px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-self: center;
-    margin-left: 12vw;
+    justify-content:space-between;
 }
 
+.user-list li p {
+    text-align: center;
+    font-weight: 650;
+}
 
 .user-list li button {
     padding: 5px;
@@ -39,8 +44,9 @@
     color: red;
 }
 
+
 .user-list li button:hover {
     transition: background color 0.3s ease;
     background-color: red;
-    color:#fefefe
+    color:#fefefe;
 }

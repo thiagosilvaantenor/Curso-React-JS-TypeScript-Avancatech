@@ -1,12 +1,18 @@
 .btn {
-    width: 100%;
-    
+    width: 100%;   
 }
 
 .btn button {
     padding: 20px 20px;
-    border: 1px solid beige;
-    border-radius: 50px;
-    background-color: blueviolet;
+    border:none;
+    border-radius: 15px;
+    background-color: #a04eec;
     cursor: pointer;
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+.btn button:hover{
+    font-size: 1em;
+    transition: 0.3s ease;
 }

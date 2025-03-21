@@ -1,9 +1,10 @@
+import { useState } from 'react';
 import './userlist.css'
 
 interface Usuario{
     id: number;
     nome: string;
-    idade: number;
+    email: string;
 }
 
 interface UserListProps{
@@ -11,13 +12,24 @@ interface UserListProps{
 }
 
 const UserList:React.FC<UserListProps> = ({usuarios}) => {
+    const [userList, setUserList] = useState<Usuario[]>(usuarios);
+
+    const removeUser = (id:number) => {
+        const novaLista = userList.filter(usuario => usuario.id !==  id);
+        setUserList(novaLista);
+
+    }
+
     return (
         <div className='user-list'>
             <ul>
-                {usuarios.map((usuario) =>(
+                {userList.map((usuario) =>(
                     <li key={usuario.id}>
-                        {usuario.nome} - {usuario.idade}
-                        <button key={usuario.id}>Remover</button>
+                        <p>{usuario.nome}</p>
+                        <p>{usuario.email}</p>
+                        <button 
+                        key={usuario.id}
+                        onClick={() => removeUser(usuario.id)}>Remover</button>
                     </li>
                 ))}
             </ul>

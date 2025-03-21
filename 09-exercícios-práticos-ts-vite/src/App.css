@@ -3,8 +3,12 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
+
+body {
+  background-color:#c5eff0;
+}
+
 
 .container{
   display: flex;
@@ -13,12 +17,19 @@
   text-align: center;
   width: 50%;
   justify-self: center;
-  gap: 25px;
+  gap: 15px;
   border: 1px solid black;
   border-radius: 50px;
-  box-shadow: 0px 5px 20px rgba(228, 11, 11, 0.3);
+  box-shadow: 0px 5px 20px rgba(228, 11, 11, 0.45);
+  background-color: #fefefe;
+  margin-top: 1vw;
 }
 
-.container h2 {
-  
+.container h1 {
+  margin-top: 15px;
+}
+
+.container p {
+  font-weight: 500;
+  font-size: 1.2em;
 }

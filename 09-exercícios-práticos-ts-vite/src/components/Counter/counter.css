@@ -1,0 +1,33 @@
+.counter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+.btns button {
+    width: 20%;
+    padding: 10px 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.btn-in{
+    background-color: #5af5bf;
+}
+
+.btn-d {
+    background-color: #fe5152;
+}
+
+.btns button:hover {
+    font-size: 1em;
+    transition: font-size 0.3s ease;
+}
