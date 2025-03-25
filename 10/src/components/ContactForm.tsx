@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Contact } from '../types/Contact';
-//import './form.css';
+import './form.css';
 
 interface ContactFormProps {
   onSubmit: (contact: Contact) => void;
@@ -42,7 +42,7 @@ export default function ContactForm({ onSubmit, selectedContact, onCancel }: Con
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
       <h2>{selectedContact ? 'Editar Contato' : 'Novo Contato'}</h2>
-
+      
       <div className="form-group">
         <label>Nome:</label>
         <input
@@ -93,7 +93,7 @@ export default function ContactForm({ onSubmit, selectedContact, onCancel }: Con
           {selectedContact ? 'Atualizar' : 'Salvar'}
         </button>
 
-
+        
         {selectedContact && (
           <button type="button" className="btn cancel" onClick={onCancel}>
             Cancelar

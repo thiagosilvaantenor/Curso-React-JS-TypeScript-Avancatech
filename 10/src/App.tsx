@@ -4,28 +4,23 @@ import { useState } from "react";
 import { Contact } from "./types/Contact";
 import ContactForm from "./components/ContactForm";
 
-
 //Função App:
-function App() {
-  const [contacts, setContacts] = useState<Contact[]>([
-    {
-      id: '1',
-      name: 'João Silva',
-      email: 'joao@gmail.com',
-      phone: '(11) 99999-9999',
-      status: 'active'
-    }
-  ]);
+function App(){
+    const [contacts, setContacts ] = useState<Contact[]>([
+        {
+            id: '1',
+            name: 'João Silva',
+            email: 'joao@gmail.com',
+            phone: '(11) 99999-9999',
+            status: 'active'
+        }
+    ]);
 
 
-  return (
+return(
     <div>
-      <ContactForm 
-      onSubmit={() => setContacts}
-      selectedContact={contacts[0]}
-      onCancel={() => setContacts}
-      />
+        <ContactForm />
     </div>
-  )
+)
 }
 export default App
