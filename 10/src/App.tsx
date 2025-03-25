@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Contact } from "./types/Contact";
 import ContactForm from "./components/ContactForm";
+import ContactList from "./components/ContactList";
 
 //Função App:
 function App(){
@@ -20,6 +21,7 @@ function App(){
 return(
     <div>
         <ContactForm />
+        <ContactList />
     </div>
 )
 }

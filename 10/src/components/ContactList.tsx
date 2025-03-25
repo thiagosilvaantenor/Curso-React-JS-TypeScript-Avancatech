@@ -1,6 +1,5 @@
 import { Contact } from "../types/Contact";
-
-
+import './contact-list.css'
 
 interface ContactListProps {
     contacts: Contact[];
