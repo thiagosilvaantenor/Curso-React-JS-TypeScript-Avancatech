@@ -1,0 +1,76 @@
+.contact-form {
+    background: #e75a5a;
+    /*padding = margem interna do elemento*/
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 10px 12px 4px rgba(41, 4, 4, 0.5);
+}
+
+.contact-form h2 {
+    margin-top: 0px;
+    color: rgba(66, 40, 3, 0.982);
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fffcf9;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.status-group {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 18px 25px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.btn.save {
+    background-color: rgb(76, 175, 80);
+    color: white;
+    font-size: 0.8em;
+}
+
+.btn.save:hover{
+    transition: 0.3s ease-in-out;
+    background-color: rgb(76, 175, 80, 0.5);
+    font-size: 0.9em;
+}
+
+.btn.cancel{
+    background-color: #f44336;
+    color: white;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}

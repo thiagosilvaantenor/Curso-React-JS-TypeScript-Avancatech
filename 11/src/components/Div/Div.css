@@ -1,0 +1,27 @@
+.ligado{
+    border: 2px solid black;
+    background-color: #36eec6aa;
+    margin-left: 1rem;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.ligado p {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.desligado{
+    border: 2px solid rgb(96, 70, 70);
+    background-color: #f53e06aa;
+    margin-left: 1rem;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.desligado p {
+    font-size: 1.2em;
+    font-weight: 600;
+}
