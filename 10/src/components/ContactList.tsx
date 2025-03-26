@@ -20,7 +20,7 @@ export default function ContactList({ contacts, onEdit, onDelete }: ContactListP
                             className="contact-card">
                             <div className="contact-info">
                                 <h3>{contact.name}</h3>
-                                <p>Email:{contact.email}</p>
+                                <p>Email: {contact.email}</p>
                                 <p>Telefone: {contact.phone}</p>
                                 <p className="status">
                                     Status:
