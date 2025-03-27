@@ -3,6 +3,7 @@ import Div from "./components/Div";
 import Filme from "./components/Filme";
 import Paragraph from "./components/Paragraph";
 import Tabuada from "./components/Tabuada";
+import './App.css'
 
 export default function App() {
   let txt = '';
