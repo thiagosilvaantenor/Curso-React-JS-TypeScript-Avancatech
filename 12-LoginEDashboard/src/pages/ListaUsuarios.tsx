@@ -1,6 +1,6 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useUser } from '../context/UserContext';
+import './ListaUsuarios.css'
 
 const ListaUsuarios = () => {
   const { users, setUsers } = useUser();
@@ -21,18 +21,19 @@ const ListaUsuarios = () => {
   };
 
   return (
-    <div>
+    <div className='lista-usuarios'>
       <h1>Lista de Usuários</h1>
-      <button onClick={() => navigate('/')}>Criar Novo Usuário</button>
-      <ul>
+      <button className='novo-usuario' onClick={() => navigate('/')}>Criar Novo Usuário</button>
+      <ul className='lista'>
         {users.length > 0 ? (
           users.map((user) => (
             <li key={user.id}>
-              <div>
-                <h3>{user.name}</h3>
-                <p>{user.email}</p>
-                <button onClick={() => handleEditUser(user.id)}>Editar</button>
-                <button onClick={() => handleDeleteUser(user.id)}>Excluir</button>
+              <div className='users'>
+                <h3>Id: {user.id}</h3>
+                <h3>Nome: {user.name}</h3>
+                <h3>Email: {user.email}</h3>
+                <button className='btn-edit' onClick={() => handleEditUser(user.id)}>Editar</button>
+                <button className='btn-del' onClick={() => handleDeleteUser(user.id)}>Excluir</button>
               </div>
             </li>
           ))
@@ -40,6 +41,7 @@ const ListaUsuarios = () => {
           <p>Nenhum usuário cadastrado</p>
         )}
       </ul>
+      <button className='btn-dashboard' onClick={() => navigate('/dashboard')}>Voltar ao Dashboard</button>
     </div>
   );
 };

@@ -12,10 +12,12 @@ const Dashboard = () => {
   };
 
   return (
-    <div className='dashboard'>
+    <div>
       <Menu nome={nome || 'Usuário'} email={email || 'sem_email@dominio.com'} />
-      <h1>Dashboard</h1>
-      <button onClick={handleNavigateToListaUsuarios}>Ir para Lista de Usuários</button>
+      <div className='dashboard'>
+        <h1>Dashboard</h1>
+        <button onClick={handleNavigateToListaUsuarios}>Ir  para Lista de Usuários</button>
+      </div>
     </div>
   );
 };

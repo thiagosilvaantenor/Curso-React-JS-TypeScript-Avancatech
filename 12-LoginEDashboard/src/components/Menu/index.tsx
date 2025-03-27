@@ -1,15 +1,20 @@
-
+import './Menu.css'
 interface menuProps {
-    nome:string;
-    email:string;
+    nome: string;
+    email: string;
 }
 
-const Menu : React.FC<menuProps> = ({nome, email}) => {
-    return(
+const Menu: React.FC<menuProps> = ({ nome, email }) => {
+    return (
         <div className="menu">
-            <p>Bem vindo, {nome}</p>
-            <p>{email}</p>
-            <button>Logout</button>
+            <div className="menu-user-info">
+                <p>Bem vindo, <strong>{nome}, {email}</strong></p>
+               
+            </div>
+            <div className="menu-logout">
+                <button>Logout</button>
+            </div>
+
         </div>
     )
 }

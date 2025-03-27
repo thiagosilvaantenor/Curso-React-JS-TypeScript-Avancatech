@@ -1,58 +1,36 @@
  /* Estilo do container do Menu */
- .menu div {
-  background-color: #ffffff;
-  padding: 2px;
-  border-radius: 8px;
+ .menu {
+  background-color: #bdf179;
+  border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 3px;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  font-size: 2em;
 }
 
-/* Estilo do parágrafo de boas-vindas */
-.menu p {
-  font-size: 1.2rem;
-  color: #555;
-  margin: 5px 0;
+.menu-user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-self: left;
+  margin-left: 1rem;
 }
 
-/* Estilo específico para o nome do usuário */
-.menu p:first-of-type {
-  font-weight: bold;
-  font-size: 1.4rem;
-  color: #333;
-}
-
-/* Estilo do botão de Logout */
-.menu button {
-  background-color: #f44336; /* Vermelho */
-  color: white;
-  padding: 10px 20px;
+.menu-logout button{
+  margin-top: 3%;
+  padding: 1rem;
+  margin-right: 0.90rem;
+  border-radius: 15px;
   border: none;
-  border-radius: 4px;
-  font-size: 1.1rem;
+  background-color: #f85022;
+  color: #1e0a0a;
+  font-weight: 600;
   cursor: pointer;
-  margin-top: 20px;
-  width: 100%;
-  transition: background-color 0.3s ease;
+  font-size: 0.8em;
 }
 
-/* Efeito hover no botão */
-.menu button:hover {
-  background-color: #e53935;
-}
-
-/* Responsividade */
-@media (max-width: 480px) {
-    .menu div {
-    padding: 15px;
-    width: 90%;
-  }
-
-  .menu p {
-    font-size: 1rem;
-  }
-
-  .menu button {
-    font-size: 1rem;
-  }
+.menu-logout button:hover {
+  transition: background-color 0.5s ease-in;
+  background-color: rgba(248, 80, 34, 0.5);
 }

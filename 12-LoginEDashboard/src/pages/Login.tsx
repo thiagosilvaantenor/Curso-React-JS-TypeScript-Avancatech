@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useUser } from '../context/UserContext';
 import { useNavigate } from 'react-router-dom';
+import './Login.css'
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -29,11 +30,11 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className='login'>
       <h1>Login</h1>
-      <form onSubmit={handleLogin}>
+      <form className='form' onSubmit={handleLogin}>
         <div>
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email">Email: </label>
           <input
             type="email"
             id="email"
@@ -44,7 +45,7 @@ const Login = () => {
         </div>
 
         <div>
-          <label htmlFor="senha">Senha:</label>
+          <label htmlFor="senha">Senha: </label>
           <input
             type="password"
             id="senha"
@@ -54,11 +55,12 @@ const Login = () => {
           />
         </div>
 
-        {erro && <div style={{ color: 'red' }}>{erro}</div>}
+        {erro && <div className='erro'>{erro}</div>}
 
         <div>
-          <button type="submit">Entrar</button>
+          <button className='btn-entrar' type="submit">Entrar</button>
           <button
+            className='btn-canc'
             type="button"
             onClick={() => {
               setEmail('');

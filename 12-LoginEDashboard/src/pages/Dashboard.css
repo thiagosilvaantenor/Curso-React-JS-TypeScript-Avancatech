@@ -1,167 +1,24 @@
-/* Estilo geral do container */
-/* Estilo geral do container */
-.dashboard div {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #f4f7fc;
-  min-height: 100vh;
+.dashboard {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 20px;
 }
 
-/* Estilo do título do Dashboard */
-.dashboard  h1 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
+.dashboard h1 {
   text-align: center;
+  font-size: 5em;
 }
 
-/* Estilo para o botão de navegação */
-.dashboard  button {
-  background-color: #007bff;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
+.dashboard button {
+  align-self: center;
+  padding: 3rem;
+  border-radius: 22px;
   cursor: pointer;
-  font-size: 1.1rem;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
+  border: none;
+  background-color: rgb(29, 103, 240);
+  font-weight: 600;
+  font-size: 2em;
 }
 
-/* Efeito hover no botão */
-.dashboard  button:hover {
-  background-color: #0056b3;
+.dashboard button:hover {
+  background-color: rgba(29, 103, 240, 0.7);
 }
-
-/* Estilo do Menu */
-.MenuContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  width: 100%;
-  max-width: 600px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-}
-
-.MenuContainer p {
-  margin: 8px 0;
-  font-size: 1.2rem;
-  color: #555;
-}
-
-.MenuContainer h2 {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 15px;
-  font-weight: normal;
-}
-
-/* Responsividade para telas menores */
-@media (max-width: 480px) {
-    .dashboard  h1 {
-    font-size: 1.6rem;
-  }
-
-  .dashboard  button {
-    font-size: 1rem;
-  }
-
-  .MenuContainer {
-    width: 90%;
-    padding: 15px;
-  }
-}
-.dashboard div {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f7fc;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  /* Estilo do título do Dashboard */
-  .dashboard  h1 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  /* Estilo para o botão de navegação */
-  .dashboard  button {
-    background-color: #007bff;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Efeito hover no botão */
-  .dashboard button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Estilo do Menu */
-  .MenuContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 600px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-  }
-  
-  .MenuContainer p {
-    margin: 8px 0;
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
-  .MenuContainer h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 15px;
-    font-weight: normal;
-  }
-  
-  /* Responsividade para telas menores */
-  @media (max-width: 480px) {
-    .dashboard h1 {
-      font-size: 1.6rem;
-    }
-  
-    .dashboard button {
-      font-size: 1rem;
-    }
-  
-    .MenuContainer {
-      width: 90%;
-      padding: 15px;
-    }
-  }
-  

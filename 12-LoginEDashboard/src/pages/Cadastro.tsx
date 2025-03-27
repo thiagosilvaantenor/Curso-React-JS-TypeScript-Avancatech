@@ -36,9 +36,9 @@ const Cadastro = () => {
   return (
     <div className='cadastro'>
       <h1>Novo Usuário</h1>
-      <form onSubmit={handleSubmit}>
-        <div className='form'>
-          <label htmlFor="usuario">Nome Usuário:</label>
+      <form className='form' onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="usuario">Nome Usuário: </label>
           <input
             type="text"
             id="usuario"
@@ -49,7 +49,7 @@ const Cadastro = () => {
         </div>
 
         <div>
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email">Email: </label>
           <input
             type="email"
             id="email"
@@ -60,7 +60,7 @@ const Cadastro = () => {
         </div>
 
         <div>
-          <label htmlFor="senha">Senha:</label>
+          <label htmlFor="senha">Senha: </label>
           <input
             type="password"
             id="senha"
@@ -71,15 +71,15 @@ const Cadastro = () => {
         </div>
 
         <div>
-          <button type="submit">Salvar</button>
-          <button type="button" onClick={() => alert('Cadastro cancelado!')}>
+          <button className='btn-save' type="submit">Salvar</button>
+          <button className='btn-canc' type="button" onClick={() => alert('Cadastro cancelado!')}>
             Cancelar
           </button>
         </div>
       </form>
       
       {/* Botão para redirecionar para o login */}
-      <button onClick={() => navigate('/users/login')}>Ir para Login</button>
+      <button className='btn-login' onClick={() => navigate('/users/login')}>Ir para Login</button>
     </div>
   );
 };
