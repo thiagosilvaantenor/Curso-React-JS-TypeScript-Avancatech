@@ -1,0 +1,91 @@
+/* Estilo geral do container */
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    align-self: center;
+  }
+  
+  /* Estilo do título */
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Estilo do formulário */
+  form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Estilo das labels e inputs */
+  .form {
+    margin-bottom: 15px;
+  }
+  
+  .form label {
+    font-size: 1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .cadastro form div input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  .cadastro form input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Estilo dos botões */
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button[type="button"] {
+    background-color: #f44336;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #e53935;
+  }
+  
+  /* Botão para ir para o login */
+  button[type="button"]:first-child {
+    margin-top: 20px;
+    background-color: #4CAF50;
+  }
+  
+  button[type="button"]:first-child:hover {
+    background-color: #45a049;
+  }
+    
