@@ -1,0 +1,19 @@
+*{
+    background-color: #f6f194;
+    cursor: none;
+}
+
+
+
+
+/* Adicionando um laser que segue o mouse */
+.laser {
+    position: absolute;
+    width: 2px; /* Espessura do laser */
+    height: 1000px; /* Tamanho do laser (você pode ajustar isso conforme necessário) */
+    background-color: red; /* Cor do laser */
+    pointer-events: none; /* Para não interferir com os outros elementos */
+    transform-origin: top center; /* Para a linha girar corretamente */
+    z-index: 10000; /* Para garantir que o laser fique na frente de outros elementos */
+  }
+  
